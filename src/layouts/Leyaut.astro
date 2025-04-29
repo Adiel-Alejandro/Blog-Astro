@@ -1,0 +1,74 @@
+---
+import '../components/cliente.astro';
+import MusicToggle from '../components/MusicToggle.jsx';
+
+---
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Harry Potter Fan Page</title>
+        <style>
+          .magic-button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0077cc;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+          }
+    
+          .magic-button:hover {
+            background-color: #005fa3;
+          }
+        </style>
+    </head>
+<body>
+  <header>
+    <h1>Harry Potter Fan Page</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/peliculas">Películas</a></li>
+        <li><a href="/personajes">Personajes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bienvenidos al mundo mágico</h2>
+      <p>Explora todo sobre la saga de Harry Potter: sus películas, personajes, curiosidades y más.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg" alt="Harry Potter" class="img-destacada">
+    </section>
+  </main>
+
+    <!-- Audio de fondo -->
+    <audio id="bg-music" autoplay loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Botón de música desde React -->
+    <MusicToggle client:only="react" />
+
+  <!-- Galería de imágenes -->
+  <section class="galeria">
+    <h2>Galería mágica</h2>
+    <div class="imagenes">
+      <img src="../public/images/Hogwarts.jpg" alt="Hogwarts">
+      <img src="../public/images/trio-magico.jpg" alt="Trío mágico">
+      <img src="../public/images/Dobby.jpg" alt="Dobby">
+    </div>
+  </section>
+  +++++++++
+
+  <footer>
+    <p>© 2025 Fan Page Harry Potter – No oficial</p>
+  </footer>
+
+</body>
+
+</html>

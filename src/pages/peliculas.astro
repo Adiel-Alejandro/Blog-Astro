@@ -1,0 +1,121 @@
+---
+import '../components/styles/style.css';
+---
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Películas de Harry Potter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    .pelicula {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5em;
+      gap: 1em;
+    }
+
+    .pelicula img {
+      width: 120px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Películas de Harry Potter</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="peliculas">Películas</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lista de películas</h2>
+
+      <div class="pelicula">
+        <img src="../public/images/La-piedra-filosofa.jpg" alt="La piedra filosofal">
+        <p>📽️ La piedra filosofal (2001)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/La-camara-secreta.jpg" alt="La cámara secreta">
+        <p>🔮 La cámara secreta (2002)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/El-prisionero-de-Azkaban.jpg" alt="El prisionero de Azkaban">
+        <p>🐺 El prisionero de Azkaban (2004)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/El-caliz-de-fuego.jpg" alt="El cáliz de fuego">
+        <p>🔥 El cáliz de fuego (2005)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/La-Orden-del-Fenix.jpg" alt="La Orden del Fénix">
+        <p>🦅 La Orden del Fénix (2007)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/El-misterio-del-principe.jpg" alt="El misterio del príncipe">
+        <p>🧪 El misterio del príncipe (2009)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/Las-Reliquias-de-la-Muerte-Parte-1.jpg" alt="Reliquias Parte 1">
+        <p>⚡ Las Reliquias de la Muerte Parte 1 (2010)</p>
+      </div>
+
+      <div class="pelicula">
+        <img src="../public/images/Las-Reliquias-de-la-Muerte-Parte-2.jpg" alt="Reliquias Parte 2">
+        <p>🧙 Las Reliquias de la Muerte Parte 2 (2011)</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fan Page Harry Potter</p>
+  </footer>
+</body>
+</html>

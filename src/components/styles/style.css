@@ -1,0 +1,164 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #2c2c2c;
+  }
+  
+  header {
+    background-color: #000;
+    color: gold;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .img-destacada {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Efecto mágico en los enlaces */
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 8px gold;
+  transform: scale(1.1);
+}
+
+/* Botón de música */
+button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: gold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #e0c100;
+}
+
+/* Galería */
+.galeria {
+  text-align: center;
+  margin-top: 2rem;
+}
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.imagenes img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+}
+
+/* Transiciones suaves para secciones */
+section {
+  transition: all 0.5s ease;
+}
+
+/* Estilos mágicos para el botón */
+.magic-button {
+  background: linear-gradient(45deg, #6a0dad, #3b0a54);
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 10px #6a0dad, 0 0 20px #6a0dad;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.magic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffde59, 0 0 30px #ffde59;
+}
+
+.magic-button:active {
+  transform: scale(0.95);
+}
+
+/* Efecto de chispas */
+.magic-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 40px;
+  background: radial-gradient(circle, #fff0 40%, #ffde59 70%, #fff0 90%);
+  animation: sparkle 2s infinite ease-in-out;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
