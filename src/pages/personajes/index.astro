@@ -1,0 +1,152 @@
+---
+import '../../components/styles/style.css';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Personajes por Casa - Harry Potter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .personaje {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      gap: 1em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      border-radius: 10px;
+    }
+
+    .personaje img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    /* Colores por casa */
+    .gryffindor { background-color: #7f0909; color: white; }
+    .slytherin   { background-color: #1a472a; color: white; }
+    .ravenclaw   { background-color: #0e1a40; color: white; }
+    .hufflepuff  { background-color: #ecb939; color: #000; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Personajes por Casa - Harry Potter</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="peliculas.html">Películas</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Gryffindor -->
+    <section class="gryffindor">
+      <h2>🦁 Gryffindor</h2>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg"} alt="Harry Potter">
+        <p>Harry Potter</p>
+      </div>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg"} alt="Hermione Granger">
+        <p>Hermione Granger</p>
+      </div>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg"} alt="Ron Weasley">
+        <p>Ron Weasley</p>
+      </div>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Neville_Longbottom.jpeg/250px-Neville_Longbottom.jpeg"} alt="Neville Longbottom">
+        <p>Neville Longbottom</p>
+      </div>
+    </section>
+
+    <!-- Slytherin -->
+    <section class="slytherin">
+      <h2>🐍 Slytherin</h2>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/1/16/Draco_Mal.JPG"} alt="Draco Malfoy">
+        <p>Draco Malfoy</p>
+      </div>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Lordvoldemort.jpg/250px-Lordvoldemort.jpg"} alt="Lord Voldemort">
+        <p>Lord Voldemort</p>
+      </div>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/d/d8/Bellatrix.jpeg"} alt="Bellatrix Lestrange">
+        <p>Bellatrix Lestrange</p>
+      </div>
+    </section>
+
+    <!-- Ravenclaw -->
+    <section class="ravenclaw">
+      <h2>🦅 Ravenclaw</h2>
+
+      <div class="personaje">
+        <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/LunaLovegood.jpeg/250px-LunaLovegood.jpeg"} alt="Luna Lovegood">
+        <p>Luna Lovegood</p>
+      </div>
+    </section>
+
+    <!-- Hufflepuff -->
+    <section class="hufflepuff">
+      <h2>🦡 Hufflepuff</h2>
+
+      <div class="personaje">
+        <img src={"/images/dobby.jpg"} alt="Dobby">
+        <p>Dobby el elfo libre</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Fan Page Harry Potter</p>
+  </footer>
+</body>
+</html>
